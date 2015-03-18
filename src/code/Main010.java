@@ -1,5 +1,7 @@
 package code;
 
+import java.util.Scanner;
+
 /**
  * Created by twiceYuan on 3/18/15.
  */
@@ -9,12 +11,16 @@ public class Main010 {
 
     public static void main(String args[]) {
 
+        Scanner sc = new Scanner(System.in);
 
-        int s = 2;
-        int t = 10;
-        int w = 5;
+        String firstLine[] = sc.nextLine().split(" ");
+        String secondLine = sc.nextLine();
 
-        String input = "bdfij";
+        int s = Integer.parseInt(firstLine[0]);
+        int t = Integer.parseInt(firstLine[1]);
+        int w = Integer.parseInt(firstLine[2]);
+
+        String input = secondLine;
 
         String src = full.substring(s - 1, t);
 
